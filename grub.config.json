@@ -1,0 +1,98 @@
+{
+  "petName": "GRUB",
+  "tagline": "// THE TAMAGOTCHI OF SHAME",
+  "timezone": "Asia/Kathmandu",
+  "github": {
+    "username": null,
+    "includePrivate": false,
+    "repo": null
+  },
+  "components": {
+    "banner": true,
+    "cta": true,
+    "pet": true,
+    "streak": true,
+    "eye": true,
+    "star": true,
+    "stats": true,
+    "languages": true,
+    "divider": true,
+    "marquee": true,
+    "inventory": true
+  },
+  "marquee": {
+    "text": null,
+    "mode": "scroll",
+    "separator": "   ·   "
+  },
+  "cta": {
+    "upstream": "masabinhok/grub"
+  },
+  "copy": {
+    "replace": false,
+    "lines": {},
+    "quotes": [],
+    "snacks": []
+  },
+  "inventory": {
+    "slots": [
+      { "slot": "Primary", "item": "NestJS" },
+      { "slot": "Database", "item": "Postgres" },
+      { "slot": "Language", "item": "TypeScript" },
+      { "slot": "Companion", "item": "GRUB" }
+    ]
+  },
+  "labels": {
+    "banner": {
+      "status": "PET STATUS"
+    },
+    "cta": {
+      "title": "ADOPT ONE OF THESE",
+      "sub": "it starves when you stop committing",
+      "button": "USE THIS TEMPLATE"
+    },
+    "pet": {
+      "hunger": "HUNGER",
+      "daysSinceCommit": "DAYS SINCE COMMIT",
+      "mood": "MOOD",
+      "resurrections": "RESURRECTIONS",
+      "feedMe": "FEED ME",
+      "feedMeSub": "strangers only",
+      "fedBy": "FED BY"
+    },
+    "streak": {
+      "current": "CURRENT STREAK",
+      "days": "days",
+      "longest": "LONGEST",
+      "activeDays": "ACTIVE DAYS"
+    },
+    "eye": {
+      "lurkers": "LURKERS",
+      "fed": "FED"
+    },
+    "star": {
+      "title": "STARS EARNED",
+      "repos": "REPOS"
+    },
+    "stats": {
+      "title": "BY THE NUMBERS",
+      "repos": "PUBLIC REPOS",
+      "stars": "STARS EARNED",
+      "followers": "FOLLOWERS",
+      "contributions": "CONTRIBUTIONS"
+    },
+    "languages": {
+      "title": "MOST USED LANGUAGES"
+    },
+    "marquee": {
+      "title": "NOW BROADCASTING",
+      "live": "ON AIR",
+      "dead": "SIGNAL LOST"
+    },
+    "inventory": {
+      "title": "EQUIPPED SKILLS"
+    }
+  },
+  "taglines": {},
+  "palette": {}
+}

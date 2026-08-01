@@ -1,0 +1,97 @@
+name: Tamagotchi of Shame
+
+on:
+  schedule:
+    # 17:45 UTC = 23:30 in Kathmandu (UTC+5:45): the end of the day the creature
+    # actually lives in, which is what `timezone` in grub.config.json sets. The
+    # run has to land inside that local day — it is asking "did anything get
+    # committed today?", and asking after midnight asks about the wrong day.
+    #
+    # Hence the half-hour of headroom rather than 23:59, and a time that is not
+    # on the hour: GitHub's scheduler is best-effort and runs latest when every
+    # other repo in the world has also asked for :00.
+    #
+    # Moving zones? Convert the local time you want to UTC and change both this
+    # line and `timezone` in the config. Getting one without the other is how the
+    # day boundary ends up somewhere nobody lives.
+    - cron: '45 17 * * *'
+  workflow_dispatch:
+    inputs:
+      simulate_days:
+        description: 'Pretend this many days have passed (renders only, never saved)'
+        required: false
+        default: ''
+      force_apology:
+        description: 'Force a resurrection, ignoring commit messages'
+        type: boolean
+        required: false
+        default: false
+      dry_run:
+        description: 'Render and log only — write and commit nothing'
+        type: boolean
+        required: false
+        default: false
+
+  # Optional: uncomment to make the pet react the moment you push an apology
+  # instead of waiting for the next midnight run. Safe against loops because the
+  # bot's own commit carries [skip ci], which GitHub honours for push events.
+  # push:
+  #   branches: [main]
+
+permissions:
+  contents: write
+
+# Never let a manual run and the cron run fight over the same push.
+concurrency:
+  group: tamagotchi
+  cancel-in-progress: false
+
+jobs:
+  feed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      # No actions/setup-node: ubuntu-latest ships Node 20+, and the script has
+      # zero dependencies, so there is nothing to install. Keeps the job ~15s.
+      - uses: actions/checkout@v4
+
+      - name: Update the creature
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional: a classic PAT with `repo` scope, stored as a repo secret.
+          # Only needed if the job log warns that private work is invisible —
+          # with "Include private contributions on my profile" enabled, the
+          # built-in GITHUB_TOKEN already sees the counts.
+          PET_TOKEN: ${{ secrets.PET_TOKEN }}
+          # ON: private repo work feeds the pet. If it cannot see any private
+          # contributions, the script says so loudly in the job log rather than
+          # letting the pet starve for the wrong reason.
+          # Trade-off: private activity is only datable through the contribution
+          # calendar, which also counts issues/PRs/reviews — not just commits.
+          PET_INCLUDE_PRIVATE: '1'
+          PET_USERNAME: ${{ github.repository_owner }}
+          PET_SIMULATE_DAYS: ${{ github.event.inputs.simulate_days }}
+        run: |
+          node scripts/update_pet.js \
+            ${{ github.event.inputs.force_apology == 'true' && '--apology' || '' }} \
+            ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
+
+      # Reads each fork's public pet-state.json off raw.githubusercontent.com.
+      # No token, one request per entry, and it swallows its own failures — the
+      # wall is decoration and does not get to fail the creature's job.
+      - name: Refresh the Wall of Shame
+        if: github.event.inputs.dry_run != 'true'
+        run: node scripts/render_wall.js
+
+      - name: Commit if anything changed
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Nothing changed — no commit."
+            exit 0
+          fi
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add pet-state.json assets README.md WALL-OF-SHAME.md
+          git commit -m 'chore: update pet state [skip ci]'
+          git push
