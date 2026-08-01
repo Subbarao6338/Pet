@@ -1,8 +1,8 @@
 {
   "lastCommitDate": "2026-08-01T07:00:00Z",
-  "lastCheckedDate": "2026-08-01T06:54:19.257Z",
-  "hunger": 0,
-  "mood": "thriving",
+  "lastCheckedDate": "2026-08-01T18:37:18.821Z",
+  "hunger": 20,
+  "mood": "hungry",
   "alive": true,
   "diedOn": null,
   "resurrections": 0,
@@ -22,84 +22,64 @@
   },
   "cache": {
     "streak": {
-      "current": 12,
-      "longest": 27,
-      "activeDays": 158,
+      "current": 46,
+      "longest": 46,
+      "activeDays": 123,
       "spark": [
-        2,
-        4,
-        6,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        2,
-        3,
-        0,
-        0,
-        6,
-        4,
-        2,
-        3,
-        0,
-        8,
-        2,
-        17,
-        7,
-        10,
-        4,
-        1,
-        12,
-        14,
+        11,
+        11,
+        9,
         21,
+        13,
+        16,
+        46,
+        23,
+        16,
+        30,
+        16,
+        8,
+        12,
+        35,
+        15,
+        36,
+        4,
+        7,
+        22,
+        14,
+        15,
+        7,
+        15,
+        6,
         5,
-        3
+        6,
+        6,
+        13,
+        6,
+        7
       ],
-      "totalContributions": 1130
+      "totalContributions": 1963
     },
     "profile": {
-      "name": "Sabin Shrestha",
-      "login": "masabinhok",
+      "name": "Subbarao6338",
+      "login": "Subbarao6338",
       "bio": null,
-      "company": "IOE, Pulchowk Campus",
-      "location": "Kathmandu, Nepal",
-      "blog": "sabinshrestha69.com.np",
-      "followers": 17,
-      "publicRepos": 29,
-      "stars": 19,
+      "company": null,
+      "location": null,
+      "blog": null,
+      "followers": 19,
+      "publicRepos": 6,
+      "stars": 4,
       "languages": [
         [
-          "TypeScript",
-          14
-        ],
-        [
           "JavaScript",
-          8
-        ],
-        [
-          "Kotlin",
-          1
-        ],
-        [
-          "Go",
-          1
-        ],
-        [
-          "PHP",
-          1
+          4
         ],
         [
           "HTML",
           1
         ],
         [
-          "Python",
-          1
-        ],
-        [
-          "C++",
+          "Dart",
           1
         ]
       ]
