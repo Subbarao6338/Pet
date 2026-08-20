@@ -1,7 +1,7 @@
 {
   "lastCommitDate": "2026-08-16T13:19:50.000+05:30",
-  "lastCheckedDate": "2026-08-19T17:57:13.259Z",
-  "hunger": 60,
+  "lastCheckedDate": "2026-08-20T18:00:29.986Z",
+  "hunger": 80,
   "mood": "feral",
   "alive": true,
   "diedOn": null,
@@ -26,7 +26,6 @@
       "longest": 61,
       "activeDays": 138,
       "spark": [
-        22,
         14,
         15,
         7,
@@ -53,6 +52,7 @@
         7,
         6,
         4,
+        0,
         0,
         0,
         0
