@@ -2,22 +2,20 @@
 <title id="stkt">Current streak 0 days, longest 61 days</title>
 <desc id="stkd">The fire is out</desc>
 <defs><linearGradient id="stkbg" x1="0" y1="0" x2="1" y2="1">
-<stop offset="0" stop-color="#1c1b19"/><stop offset="1" stop-color="#111110"/>
+<stop offset="0" stop-color="#141417"/><stop offset="1" stop-color="#0a0a0b"/>
 </linearGradient></defs>
 <style>
     .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace}
-    .lbl{font-size:9.5px;letter-spacing:1.6px;fill:#8a8a82}
-    .big{font-size:31px;font-weight:700;fill:#c8c8c0}
-    .med{font-size:15px;font-weight:700;fill:#c8c8c0}
-    .sm{font-size:11px;fill:#c8c8c0}
-    .dim{font-size:11px;fill:#8a8a82}
+    .lbl{font-size:9.5px;letter-spacing:1.6px;fill:#6b7076}
+    .big{font-size:31px;font-weight:700;fill:#9aa0a6}
+    .med{font-size:15px;font-weight:700;fill:#9aa0a6}
+    .sm{font-size:11px;fill:#9aa0a6}
+    .dim{font-size:11px;fill:#6b7076}
     
-    .pulse{animation:pulse 3.4s ease-in-out infinite}
-    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.62}}
-    .fnum{font-size:11px;fill:#8a8a82}
+    .fnum{font-size:11px;fill:#6b7076}
     
 </style>
 <rect width="420" height="180" rx="14" fill="url(#stkbg)"/>
-<rect x="0.75" y="0.75" width="418.5" height="178.5" rx="13.5" fill="none" stroke="#a03030" stroke-opacity="0.35"/>
-<ellipse cx="100" cy="150" rx="21.6" ry="7" fill="#8a8a82" opacity="0.12"/><rect x="66" y="148" width="68" height="6" rx="3" fill="#2a2a26"/><rect x="78" y="153" width="44" height="4" rx="2" fill="#2a2a26" opacity="0.7"/><path d="M84 148 q16 -14 32 0 z" fill="#8a8a82" opacity="0.5"/><path d="M100 136 c-10 -12 10 -18 0 -30 c-8 -10 6 -14 2 -22" fill="none" stroke="#8a8a82" stroke-width="2" stroke-linecap="round" opacity="0.4"><animate attributeName="opacity" values="0.4;0.15;0.4" dur="4s" repeatCount="indefinite"/></path><text class="mono lbl" x="200" y="42">CURRENT STREAK</text><rect x="207" y="47" width="21" height="7" fill="#8a8a82"/><rect x="200" y="54" width="7" height="7" fill="#8a8a82"/><rect x="228" y="54" width="7" height="7" fill="#8a8a82"/><rect x="200" y="61" width="7" height="7" fill="#8a8a82"/><rect x="228" y="61" width="7" height="7" fill="#8a8a82"/><rect x="200" y="68" width="7" height="7" fill="#8a8a82"/><rect x="228" y="68" width="7" height="7" fill="#8a8a82"/><rect x="200" y="75" width="7" height="7" fill="#8a8a82"/><rect x="228" y="75" width="7" height="7" fill="#8a8a82"/><rect x="200" y="82" width="7" height="7" fill="#8a8a82"/><rect x="228" y="82" width="7" height="7" fill="#8a8a82"/><rect x="207" y="89" width="21" height="7" fill="#8a8a82"/><text class="mono fnum" x="243" y="94">days</text><text class="mono lbl" x="200" y="130">LONGEST</text><text class="mono med" x="200" y="152">61</text><text class="mono lbl" x="304" y="130">ACTIVE DAYS</text><text class="mono med" x="304" y="152">138</text>
+<rect x="0.75" y="0.75" width="418.5" height="178.5" rx="13.5" fill="none" stroke="#6b7076" stroke-opacity="0.35"/>
+<ellipse cx="100" cy="150" rx="21.6" ry="7" fill="#6b7076" opacity="0.12"/><rect x="66" y="148" width="68" height="6" rx="3" fill="#2e2f33"/><rect x="78" y="153" width="44" height="4" rx="2" fill="#2e2f33" opacity="0.7"/><path d="M84 148 q16 -14 32 0 z" fill="#6b7076" opacity="0.5"/><path d="M100 136 c-10 -12 10 -18 0 -30 c-8 -10 6 -14 2 -22" fill="none" stroke="#6b7076" stroke-width="2" stroke-linecap="round" opacity="0.4"></path><text class="mono lbl" x="200" y="42">CURRENT STREAK</text><rect x="207" y="47" width="21" height="7" fill="#6b7076"/><rect x="200" y="54" width="7" height="7" fill="#6b7076"/><rect x="228" y="54" width="7" height="7" fill="#6b7076"/><rect x="200" y="61" width="7" height="7" fill="#6b7076"/><rect x="228" y="61" width="7" height="7" fill="#6b7076"/><rect x="200" y="68" width="7" height="7" fill="#6b7076"/><rect x="228" y="68" width="7" height="7" fill="#6b7076"/><rect x="200" y="75" width="7" height="7" fill="#6b7076"/><rect x="228" y="75" width="7" height="7" fill="#6b7076"/><rect x="200" y="82" width="7" height="7" fill="#6b7076"/><rect x="228" y="82" width="7" height="7" fill="#6b7076"/><rect x="207" y="89" width="21" height="7" fill="#6b7076"/><text class="mono fnum" x="243" y="94">days</text><text class="mono lbl" x="200" y="130">LONGEST</text><text class="mono med" x="200" y="152">61</text><text class="mono lbl" x="304" y="130">ACTIVE DAYS</text><text class="mono med" x="304" y="152">138</text>
 </svg>

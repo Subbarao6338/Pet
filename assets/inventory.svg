@@ -2,20 +2,18 @@
 <title id="invt">Equipped: Primary: NestJS, Database: Postgres, Language: TypeScript, Companion: GRUB</title>
 <desc id="invd">Tech stack as an RPG equipment screen</desc>
 <defs><linearGradient id="invbg" x1="0" y1="0" x2="1" y2="1">
-<stop offset="0" stop-color="#1c1b19"/><stop offset="1" stop-color="#111110"/>
+<stop offset="0" stop-color="#141417"/><stop offset="1" stop-color="#0a0a0b"/>
 </linearGradient></defs>
 <style>
     .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace}
-    .lbl{font-size:9.5px;letter-spacing:1.6px;fill:#8a8a82}
-    .big{font-size:31px;font-weight:700;fill:#c8c8c0}
-    .med{font-size:15px;font-weight:700;fill:#c8c8c0}
-    .sm{font-size:11px;fill:#c8c8c0}
-    .dim{font-size:11px;fill:#8a8a82}
+    .lbl{font-size:9.5px;letter-spacing:1.6px;fill:#6b7076}
+    .big{font-size:31px;font-weight:700;fill:#9aa0a6}
+    .med{font-size:15px;font-weight:700;fill:#9aa0a6}
+    .sm{font-size:11px;fill:#9aa0a6}
+    .dim{font-size:11px;fill:#6b7076}
     
-    .pulse{animation:pulse 3.4s ease-in-out infinite}
-    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.62}}
 </style>
 <rect width="420" height="196" rx="14" fill="url(#invbg)"/>
-<rect x="0.75" y="0.75" width="418.5" height="194.5" rx="13.5" fill="none" stroke="#a03030" stroke-opacity="0.35"/>
-<text class="mono lbl" x="24" y="26">EQUIPPED SKILLS</text><text class="mono lbl" x="396" y="26" text-anchor="end" opacity="0.7">4/4</text><line x1="24" y1="36" x2="396" y2="36" stroke="#a03030" stroke-opacity="0.25"/><rect x="24" y="49" width="9" height="9" fill="#8a8a82"/><text class="mono lbl" x="43" y="58">PRIMARY</text><text class="mono sm" x="196" y="58" font-weight="700">NestJS</text><text class="mono dim" x="396" y="58" text-anchor="end" font-size="9" opacity="0.7">EQUIPPED</text><line x1="24" y1="67" x2="396" y2="67" stroke="#8a8a82" stroke-opacity="0.14"/><rect x="24" y="79" width="9" height="9" fill="#8a8a82"/><text class="mono lbl" x="43" y="88">DATABASE</text><text class="mono sm" x="196" y="88" font-weight="700">Postgres</text><text class="mono dim" x="396" y="88" text-anchor="end" font-size="9" opacity="0.7">EQUIPPED</text><line x1="24" y1="97" x2="396" y2="97" stroke="#8a8a82" stroke-opacity="0.14"/><rect x="24" y="109" width="9" height="9" fill="#8a8a82"/><text class="mono lbl" x="43" y="118">LANGUAGE</text><text class="mono sm" x="196" y="118" font-weight="700">TypeScript</text><text class="mono dim" x="396" y="118" text-anchor="end" font-size="9" opacity="0.7">EQUIPPED</text><line x1="24" y1="127" x2="396" y2="127" stroke="#8a8a82" stroke-opacity="0.14"/><rect x="24" y="139" width="9" height="9" fill="#a03030" class="pulse"/><text class="mono lbl" x="43" y="148">COMPANION</text><text class="mono sm" x="196" y="148" font-weight="700" fill="#a03030">GRUB</text><text class="mono dim" x="396" y="148" text-anchor="end" font-size="9" opacity="0.7">EQUIPPED</text><line x1="24" y1="157" x2="396" y2="157" stroke="#8a8a82" stroke-opacity="0.14"/>
+<rect x="0.75" y="0.75" width="418.5" height="194.5" rx="13.5" fill="none" stroke="#6b7076" stroke-opacity="0.35"/>
+<text class="mono lbl" x="24" y="26">EQUIPPED SKILLS</text><text class="mono lbl" x="396" y="26" text-anchor="end" opacity="0.7">4/4</text><line x1="24" y1="36" x2="396" y2="36" stroke="#6b7076" stroke-opacity="0.25"/><rect x="24" y="49" width="9" height="9" fill="#6b7076"/><text class="mono lbl" x="43" y="58">PRIMARY</text><text class="mono sm" x="196" y="58" font-weight="700">NestJS</text><text class="mono dim" x="396" y="58" text-anchor="end" font-size="9" opacity="0.7">EQUIPPED</text><line x1="24" y1="67" x2="396" y2="67" stroke="#6b7076" stroke-opacity="0.14"/><rect x="24" y="79" width="9" height="9" fill="#6b7076"/><text class="mono lbl" x="43" y="88">DATABASE</text><text class="mono sm" x="196" y="88" font-weight="700">Postgres</text><text class="mono dim" x="396" y="88" text-anchor="end" font-size="9" opacity="0.7">EQUIPPED</text><line x1="24" y1="97" x2="396" y2="97" stroke="#6b7076" stroke-opacity="0.14"/><rect x="24" y="109" width="9" height="9" fill="#6b7076"/><text class="mono lbl" x="43" y="118">LANGUAGE</text><text class="mono sm" x="196" y="118" font-weight="700">TypeScript</text><text class="mono dim" x="396" y="118" text-anchor="end" font-size="9" opacity="0.7">EQUIPPED</text><line x1="24" y1="127" x2="396" y2="127" stroke="#6b7076" stroke-opacity="0.14"/><rect x="24" y="139" width="9" height="9" fill="#6b7076"/><text class="mono lbl" x="43" y="148">COMPANION</text><text class="mono sm" x="196" y="148" font-weight="700" fill="#6b7076">GRUB</text><text class="mono dim" x="396" y="148" text-anchor="end" font-size="9" opacity="0.7">BROKEN</text><line x1="24" y1="157" x2="396" y2="157" stroke="#6b7076" stroke-opacity="0.14"/>
 </svg>

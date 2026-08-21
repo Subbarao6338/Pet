@@ -2,20 +2,18 @@
 <title id="lngt">Top languages: JavaScript, HTML, Dart</title>
 <desc id="lngd">Language distribution across public repositories</desc>
 <defs><linearGradient id="lngbg" x1="0" y1="0" x2="1" y2="1">
-<stop offset="0" stop-color="#1c1b19"/><stop offset="1" stop-color="#111110"/>
+<stop offset="0" stop-color="#141417"/><stop offset="1" stop-color="#0a0a0b"/>
 </linearGradient></defs>
 <style>
     .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace}
-    .lbl{font-size:9.5px;letter-spacing:1.6px;fill:#8a8a82}
-    .big{font-size:31px;font-weight:700;fill:#c8c8c0}
-    .med{font-size:15px;font-weight:700;fill:#c8c8c0}
-    .sm{font-size:11px;fill:#c8c8c0}
-    .dim{font-size:11px;fill:#8a8a82}
+    .lbl{font-size:9.5px;letter-spacing:1.6px;fill:#6b7076}
+    .big{font-size:31px;font-weight:700;fill:#9aa0a6}
+    .med{font-size:15px;font-weight:700;fill:#9aa0a6}
+    .sm{font-size:11px;fill:#9aa0a6}
+    .dim{font-size:11px;fill:#6b7076}
     
-    .pulse{animation:pulse 3.4s ease-in-out infinite}
-    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.62}}
 </style>
 <rect width="420" height="180" rx="14" fill="url(#lngbg)"/>
-<rect x="0.75" y="0.75" width="418.5" height="178.5" rx="13.5" fill="none" stroke="#a03030" stroke-opacity="0.35"/>
-<text class="mono lbl" x="24" y="26">MOST USED LANGUAGES</text><line x1="24" y1="36" x2="396" y2="36" stroke="#a03030" stroke-opacity="0.25"/><rect x="24" y="58" width="248" height="14" fill="#ddd9b7" rx="3"/><rect x="274" y="58" width="62" height="14" fill="#916b61" rx="0"/><rect x="338" y="58" width="62" height="14" fill="#5e8b89" rx="3"/><rect x="24" y="98" width="9" height="9" rx="2" fill="#ddd9b7"/><text class="mono sm" x="39" y="106">JavaScript</text><text class="mono dim" x="113" y="106">67%</text><rect x="224" y="98" width="9" height="9" rx="2" fill="#916b61"/><text class="mono sm" x="239" y="106">HTML</text><text class="mono dim" x="273.4" y="106">17%</text><rect x="24" y="124" width="9" height="9" rx="2" fill="#5e8b89"/><text class="mono sm" x="39" y="132">Dart</text><text class="mono dim" x="73.4" y="132">17%</text>
+<rect x="0.75" y="0.75" width="418.5" height="178.5" rx="13.5" fill="none" stroke="#6b7076" stroke-opacity="0.35"/>
+<text class="mono lbl" x="24" y="26">MOST USED LANGUAGES</text><line x1="24" y1="36" x2="396" y2="36" stroke="#6b7076" stroke-opacity="0.25"/><rect x="24" y="58" width="248" height="14" fill="#d6d6d6" rx="3"/><rect x="274" y="58" width="62" height="14" fill="#757575" rx="0"/><rect x="338" y="58" width="62" height="14" fill="#7d7d7d" rx="3"/><rect x="24" y="98" width="9" height="9" rx="2" fill="#d6d6d6"/><text class="mono sm" x="39" y="106">JavaScript</text><text class="mono dim" x="113" y="106">67%</text><rect x="224" y="98" width="9" height="9" rx="2" fill="#757575"/><text class="mono sm" x="239" y="106">HTML</text><text class="mono dim" x="273.4" y="106">17%</text><rect x="24" y="124" width="9" height="9" rx="2" fill="#7d7d7d"/><text class="mono sm" x="39" y="132">Dart</text><text class="mono dim" x="73.4" y="132">17%</text>
 </svg>
