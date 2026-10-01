@@ -1,6 +1,6 @@
 {
   "lastCommitDate": "2026-09-30T00:00:00.000Z",
-  "lastCheckedDate": "2026-09-30T21:31:38.762Z",
+  "lastCheckedDate": "2026-10-01T21:59:37.142Z",
   "hunger": 100,
   "mood": "deceased",
   "alive": false,
@@ -26,7 +26,6 @@
       "longest": 61,
       "activeDays": 164,
       "spark": [
-        3,
         1,
         3,
         3,
@@ -55,7 +54,8 @@
         3,
         1,
         10,
-        2
+        2,
+        0
       ],
       "totalContributions": 2331
     },
