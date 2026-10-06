@@ -1,6 +1,6 @@
 {
   "lastCommitDate": "2026-10-04T00:00:00.000Z",
-  "lastCheckedDate": "2026-10-05T23:21:21.699Z",
+  "lastCheckedDate": "2026-10-06T21:52:50.975Z",
   "hunger": 100,
   "mood": "deceased",
   "alive": false,
@@ -22,11 +22,10 @@
   },
   "cache": {
     "streak": {
-      "current": 3,
+      "current": 0,
       "longest": 61,
       "activeDays": 167,
       "spark": [
-        5,
         2,
         0,
         0,
@@ -55,6 +54,7 @@
         3,
         2,
         5,
+        0,
         0
       ],
       "totalContributions": 2341
