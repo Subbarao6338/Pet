@@ -1,6 +1,6 @@
 {
   "lastCommitDate": "2026-11-11T08:00:00Z",
-  "lastCheckedDate": "2026-11-11T23:42:11.469Z",
+  "lastCheckedDate": "2026-11-12T22:51:01.300Z",
   "hunger": 100,
   "mood": "deceased",
   "alive": false,
@@ -29,7 +29,6 @@
         0,
         0,
         0,
-        0,
         4,
         4,
         7,
@@ -55,7 +54,8 @@
         34,
         38,
         22,
-        11
+        11,
+        0
       ],
       "totalContributions": 2500
     },
