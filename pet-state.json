@@ -1,6 +1,6 @@
 {
   "lastCommitDate": "2026-11-19T00:00:00.000Z",
-  "lastCheckedDate": "2026-11-21T22:21:33.948Z",
+  "lastCheckedDate": "2026-11-22T22:46:04.178Z",
   "hunger": 100,
   "mood": "deceased",
   "alive": false,
@@ -32,7 +32,6 @@
         0,
         0,
         0,
-        0,
         1,
         0,
         0,
@@ -54,6 +53,7 @@
         2,
         0,
         1,
+        0,
         0,
         0
       ],
